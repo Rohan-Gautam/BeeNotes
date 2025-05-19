@@ -134,3 +134,157 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# ========== NODE (backend & frontend) ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ========== BUILD / OUTPUT ==========
+dist/
+build/
+coverage/
+.out/
+.next/
+.cache/
+tmp/
+temp/
+logs/
+*.log
+*.tsbuildinfo
+
+# ========== TYPESCRIPT ==========
+*.tsbuildinfo
+
+# ========== ENV FILES ==========
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# ========== OS-SPECIFIC ==========
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+Icon?
+._*
+
+# ========== IDEs / EDITORS ==========
+# VS Code
+.vscode/
+.history/
+*.code-workspace
+
+# IntelliJ / WebStorm / PhpStorm / etc.
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.c9/
+.settings/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# JetBrains Rider
+.idea/
+*.sln
+*.user
+*.suo
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.un~
+
+# Emacs
+*~
+
+# VS
+*.vs/
+
+# NetBeans
+nbproject/private/
+
+# Xcode
+*.pbxuser
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+
+# Android Studio
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.ap_
+
+# ========== TESTING ==========
+coverage/
+.nyc_output/
+jest.config.js
+jest.config.ts
+
+# ========== MONOREPO TOOLS ==========
+lerna-debug.log
+.pnpm-debug.log
+.husky/_/
+
+# ========== MISC ==========
+*.local
+*.pid
+*.seed
+*.pid.lock
+*.lock
+*.tgz
+
+# ========== GIT ==========
+*.orig
+*.rej
+*.patch
+*.diff
+*.bak
+*.backup
+*.tmp
+*.temp
+*.old
+
+# ========== CI / DEPLOYMENT ==========
+.Dockerfile
+docker-compose.override.yml
+.docker/
+.kube/
+.kubernetes/
+*.envrc
+.envrc
+
+# ========== BY PROJECT STRUCTURE ==========
+# Ignore backend + frontend specific node_modules and builds if present
+backend/node_modules/
+backend/dist/
+backend/*.tsbuildinfo
+
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/coverage/
+frontend/*.tsbuildinfo
